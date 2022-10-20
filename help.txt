@@ -1,0 +1,7 @@
+HELP FILE 
+#######################
+option :
+    --> -h show this message
+    --> -w show signature
+    --> -d debug mode you can see the download of git 
+    -> -D download in silent mode 
