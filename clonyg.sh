@@ -19,7 +19,7 @@ elif [[ "$1" = "-d" ]]; then
     for ligne in $(<$fichier); do
         #afficher le pseudo
         #telecharge
-        git clone  https://gitlab.com/$ligne/$2 ./projet/$2/$ligne
+        git clone  --no-checkout https://gitlab.com/$ligne/$2 ./projet/$2/$ligne
     done
 
 #clone
@@ -33,7 +33,7 @@ elif [[ "$1" = "-c" ]]; then
 
     for ligne in $(<$fichier); do
         #telecharge en mode silencieux
-        git clone -q https://gitlab.com/$ligne/$2 ./projet/$2/$ligne
+        git clone -q  --no-checkout https://gitlab.com/$ligne/$2 ./projet/$2/$ligne
     
     done
 fi
