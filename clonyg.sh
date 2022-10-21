@@ -19,7 +19,7 @@ elif [[ "$1" = "-d" ]]; then
     for ligne in $(<$fichier); do
         #afficher le pseudo
         #telecharge
-        git clone https://gitlab.com/$ligne/$2 ./projet/$2/$ligne
+        git clone  https://gitlab.com/$ligne/$2 ./projet/$2/$ligne
     done
 
 #clone
